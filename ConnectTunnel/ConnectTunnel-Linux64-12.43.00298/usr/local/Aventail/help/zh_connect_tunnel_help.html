@@ -1,0 +1,389 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<!-- Inserted by TRADOS: --><META HTTP-EQUIV="content-type" CONTENT="text/html; charset=GB2312">
+
+	<title>SonicWALL / Aventail Connect Tunnel 客户端帮助</title>
+	
+<style>
+
+b.cBold
+{
+  font-weight: bold
+}
+
+p.pBody
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+p.pBodyRelative
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+li.pSmartList1
+ {
+ 	color: black;
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0em;
+    text-transform: none;
+}
+
+li.pSmartList2
+ {
+ 	color: black;
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0em;
+    text-transform: none;
+}
+
+h1.pHeading1
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+h2.pHeading2
+{
+  color: #003366;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h3.pHeading3
+{
+  color: #003366;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 2em;
+  margin-right: 3em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 class="pHeading1">SonicWALL / Aventail Connect Tunnel 客户端帮助</h1>
+
+<p class="pBody">采用 Smart Tunneling 技术的 SonicWALL / Aventail Connect Tunnel 是 SonicWALL / Aventail 虚拟专用网络 (VPN) 解决方案的客户端组件，它可实现对基于 Web 的应用程序和客户端/服务器应用程序以及文件共享的安全授权访问。该帮助信息介绍适用于 Mac OS X 和 Linux 操作系统的 Connect Tunnel。</p>
+
+<div>
+<ul>
+<li class="pSmartList1"><a href="#Introduction">简介</a></li>
+<ul><li class="pSmartList2"><a href="#System requirements">系统要求</a></li></ul>
+<li class="pSmartList1"><a href="#Starting Aventail Connect">启动 Aventail Connect</a></li>
+<ul>
+<li class="pSmartList2"><a href="#To Start Aventail Connect (Macintosh)">启动 Aventail Connect (Macintosh)</a></li>
+<li class="pSmartList2"><a href="#To Start Aventail Connect (Linux)">启动 Aventail Connect (Linux)</a></li>
+<li class="pSmartList2"><a href="#Specifying a Login Group">指定登录组</a></li>
+<li class="pSmartList2"><a href="#Connecting to a Different VPN">连接到不同的 VPN</a></li>
+<li class="pSmartList2"><a href="#How to Tell if Aventail Connect is Running">如何判断 Aventail Connect 是否正在运行</a></li>
+</ul>
+<li class="pSmartList1"><a href="#Quitting Aventail Connect">退出 Aventail Connect</a></li>
+<li class="pSmartList1"><a href="#Managing Configurations">管理配置</a></li>
+<ul>
+<li class="pSmartList2"><a href="#Viewing Aventail Connect Settings">查看 Aventail Connect 设置</a></li>
+<li class="pSmartList2"><a href="#Editing Aventail Connect Settings">编辑 Aventail Connect 设置</a></li>
+<li class="pSmartList2"><a href="#Creating a New Configuration">创建新配置</a></li>
+<li class="pSmartList2"><a href="#Deleting a Configuration">删除配置</a></li>
+<li class="pSmartList2"><a href="#Advanced Options">高级选项</a></li>
+</ul>
+<li class="pSmartList1"><a href="#Processing Server Certificates">处理服务器证书</a></li>
+<li class="pSmartList1"><a href="#Configuring Proxy Server Settings (Linux only)">配置代理服务器设置（仅限 Linux）</a></li>
+<li class="pSmartList1"><a href="#Troubleshooting">疑难解答</a></li>
+</ul>
+</div>
+
+<h2 class="pHeading2"><a name="Introduction">简介</a></h2>
+
+<p class="pBody">使用 Connect Tunnel，您可以连接到受 SonicWALL Aventail VPN 保护的网络资源，并访问以下类型的资源：
+<div><ul>
+<li class="pSmartList1"><b class="cBold">客户端/服务器资源：</b>客户端/服务器应用程序、瘦客户端应用程序以及终端服务。</li>
+<li class="pSmartList1"><b class="cBold">网站和应用程序：</b>可通过浏览器访问的 Web 内容和基于 Web 的应用程序。</li>
+<li class="pSmartList1"><b class="cBold">网络共享：</b>共享文件夹和文件以及映射驱动器。</li>
+</ul></div>
+<h3 class="pHeading3"><a name="System requirements">系统要求</a></h3>
+<p class="pBody">该客户端应用程序需要 JVM（Java 虚拟机），并且设计用于 32 位和 64 位 Linux 计算机以及基于 Apple Macintosh 的 PPC/IA-32 和 PPC/IA-64 计算机。 </p>
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Starting Aventail Connect">启动 Aventail Connect</a></h2>
+
+<p class="pBody">若要通过 Aventail Connect 访问网络资源，您的身份首先必须得到验证。这可确保只有授权用户才能访问受保护的网络资源。用于验证身份的凭据通常由用户名和密码或验证码组成。</p>
+
+<h3 class="pHeading3"><a name="To start Aventail Connect Macintosh">启动 Aventail Connect (Macintosh)</a></h3>
+<div><ol>
+<li class="pSmartList1">在 Finder 中，双击&ldquo;应用程序&rdquo;<b class="cBold"></b>，然后双击 Aventail Connect 图标。将出现 Aventail Connect 登录对话框。</li>
+<li class="pSmartList1">在&ldquo;配置&rdquo;<b class="cBold"></b>列表中，选择一种 VPN 配置。如果没有已保存的配置，则必须创建一个；有关详细信息，请参阅<a href="#Creating a New Configuration">创建新配置</a>。</li> 
+<li class="pSmartList1">如果您访问的网络资源使用了服务器证书，Aventail Connect 可能会显示该证书。在接受服务器证书之前，先确认它是否来自可信来源。由于任何人都可以颁发证书，因此应只接受来自可信来源的证书。否则，接收的信息可能无效。如果您不确定是否应接受证书，请咨询管理员。</li>
+<li class="pSmartList1">在&ldquo;用户名&rdquo;<b class="cBold"></b>框中，键入您的用户名。</li>
+<li class="pSmartList1">在&ldquo;密码&rdquo;<b class="cBold"></b>或&ldquo;验证码&rdquo;<b class="cBold"></b>框中，键入您的密码或验证码。（密码可能区分大小写：确保没有启用 Caps Lock 和 Num Lock 键。）</li>
+<li class="pSmartList1">单击&ldquo;连接&rdquo;<b class="cBold"></b>。登录对话框中的消息指示 VPN 连接的状态。</li>
+</ol></div>
+
+<p class="pBody"><b class="cBold">注意</b></p>
+<div><ul>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，可以通过从列表中选择不同配置来启动与不同 VPN 或登录组的连接。</li>
+<li class="pSmartList1">从&ldquo;应用程序&rdquo;<b class="cBold"></b>目录中，可以将 Aventail Connect 图标拖到停靠站以方便访问。</li>
+</ul></div>
+
+<h3 class="pHeading3"><a name="To start Aventail Connect Linux">启动 Aventail Connect (Linux)</a></h3>
+<div><ol>
+<li class="pSmartList1">安装 Aventail Connect 后，您可以从任意位置运行 <em>startctui</em>。还可以通过双击桌面上的 Aventail Connect 图标来启动 Aventail Connect。将出现 Aventail Connect 登录对话框。</li>
+<li class="pSmartList1">在&ldquo;配置&rdquo;<b class="cBold"></b>列表中，选择一种 VPN 配置。如果没有已保存的配置，则必须创建一个；有关详细信息，请参阅<a href="#Creating a New Configuration">创建新配置</a>。</li> 
+<li class="pSmartList1">如果您访问的网络资源使用了服务器证书，Aventail Connect 可能会显示该证书。在接受服务器证书之前，先确认它是否来自可信来源。由于任何人都可以颁发证书，因此应只接受来自可信来源的证书。否则，接收的信息可能无效。如果您不确定是否应接受证书，请咨询管理员。</li>
+<li class="pSmartList1">在&ldquo;用户名&rdquo;<b class="cBold"></b>框中，键入您的用户名。</li>
+<li class="pSmartList1">在&ldquo;密码&rdquo;<b class="cBold"></b>或&ldquo;验证码&rdquo;<b class="cBold"></b>框中，键入您的密码或验证码。（密码可能区分大小写：确保没有启用 Caps Lock 和 Num Lock 键。）</li>
+<li class="pSmartList1">单击&ldquo;连接&rdquo;<b class="cBold"></b>。登录对话框中的消息指示 VPN 连接的状态。</li>
+</ol></div>
+
+<p class="pBody"><b class="cBold">注意</b></p>
+<div><ul>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，您可以单击&ldquo;创建/编辑配置&rdquo;<b class="cBold"></b>启动与不同 VPN 或登录组的连接。</li>
+</ul></div>
+
+<h3 class="pHeading3"><a name="Specifying a Login Group">指定登录组</a></h3>
+
+<p class="pBody">如有必要，Aventail Connect 允许您登录到不同的登录组（例如，您在&ldquo;销售&rdquo;和&ldquo;市场营销&rdquo;组之间切换）。您可能需要为每个登录组提供不同的身份验证凭据。</p>
+<p class="pBody">每次启动与 VPN 的连接时，都必须指定登录组。仅当 Aventail Connect 脱机（即，未连接到 VPN）时，该选项才可用。</p>
+
+<p class="pBody"><b class="cBold">指定登录组</b></p>
+
+<div><ol>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，单击&ldquo;创建/编辑配置&rdquo;<b class="cBold"></b>。</li>
+<li class="pSmartList1">单击&ldquo;常规&rdquo;<b class="cBold"></b>选项卡，然后在&ldquo;登录组&rdquo;<b class="cBold"></b>框的右侧，单击&ldquo;更改&rdquo;<b class="cBold"></b>。将出现&ldquo;选择登录组&rdquo;<b class="cBold"></b>对话框，并显示当前组列表。</li>
+<li class="pSmartList1">在&ldquo;选择或输入登录组&rdquo;<b class="cBold"></b>框中，选择要登录到其中的登录组的名称。如果所需组没有出现在列表中，请单击&ldquo;刷新&rdquo;<b class="cBold"></b>以更新列表。根据管理员配置 Aventail Connect 的方式，有些登录组可能不会出现在列表中；不过，通过在&ldquo;选择或输入登录组&rdquo;<b class="cBold"></b>框中键入隐藏登录组的名称，您仍可以登录到该组（如果您有权这么做）。</li>
+<li class="pSmartList1">单击&ldquo;确定&rdquo;<b class="cBold"></b>。将会出现登录对话框。</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="Connecting to a Different VPN">连接到不同的 VPN</a></h3>
+
+<p class="pBody">若要指定要连接到的不同 VPN，Aventail Connect 必须处于脱机状态（即，未连接到 VPN）。</p>
+
+<p class="pBody"><b class="cBold">指定 VPN 的主机名或 IP 地址</b></p>
+<div><ol>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，单击&ldquo;创建/编辑配置&rdquo;<b class="cBold"></b>。</li>
+<li class="pSmartList1">单击&ldquo;常规&rdquo;<b class="cBold"></b>选项卡。</li>
+<li class="pSmartList1">在&ldquo;VPN 的主机名或 IP 地址&rdquo;<b class="cBold"></b>框中，键入要连接到的 VPN 的主机名或 IP 地址。</li>
+<li class="pSmartList1">单击&ldquo;确定&rdquo;<b class="cBold"></b>。将会出现登录对话框。</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="How to tell if Aventail Connect is running">如何判断 Aventail Connect 是否正在运行</a></h3>
+
+<p class="pBody">当 Aventail Connect 正在运行并且已连接到 VPN 时，将会出现连接状态对话框。该对话框包含基本连接信息，其中包括当前所用的配置名称以及所连接到的 VPN 的主机名或 IP 地址。可以最小化此对话框；在 Linux 系统上，关闭此对话框将会结束网络连接并关闭 Aventail Connect。</p>
+
+<hr width="100%" align=LEFT>
+<h2 class="pHeading2"><a name="Quitting Aventail Connect">退出 Aventail Connect</a></h2>
+
+<p class="pBody">若要结束 VPN 会话并断开远程网络连接，请单击 Aventail Connect 登录对话框中的&ldquo;断开连接&rdquo;<b class="cBold"></b>。</p>
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Managing Configurations">管理配置</a></h2>
+<p class="pBody">若要简化登录过程，可以设置一个或多个 VPN 配置。例如，如果您有时连接到不同的登录组或不同的 VPN，则可以使用不同的名称保存这些设置。 </p>
+
+<h3 class="pHeading3"><a name="Viewing Aventail Connect settings">查看 Aventail Connect 设置</a></h3>
+<p class="pBody">若要查看设置，Aventail Connect 必须脱机（即，未连接到 VPN）。</p>
+<div><ol>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，从&ldquo;配置&rdquo;列表中选择&ldquo;创建/编辑配置&rdquo;<i class="cItalic"></i><b class="cBold"></b>。</li>
+<li class="pSmartList1">从左侧的 VPN 配置列表中选择要查看的设置。您将看到 VPN 的主机地址以及登录组的名称（如果存在多个登录组）。</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="Editing Aventail Connect settings">编辑 Aventail Connect 设置</a></h3>
+<p class="pBody">若要编辑设置，Aventail Connect 必须脱机（即，未连接到 VPN）。</p>
+<div><ol>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，从&ldquo;配置&rdquo;列表中选择&ldquo;创建/编辑配置&rdquo;<i class="cItalic"></i><b class="cBold"></b>。</li>
+<li class="pSmartList1">从左侧的 VPN 配置列表中选择要编辑的设置。 </li>
+<li class="pSmartList1">必要时对&ldquo;主机地址&rdquo;<b class="cBold"></b>框进行编辑。</li>
+<li class="pSmartList1">如有必要，Aventail Connect 允许您登录到不同的登录组（例如，您在&ldquo;销售&rdquo;和&ldquo;市场营销&rdquo;组之间切换）。您可能需要为每个登录组提供不同的身份验证凭据。若要更改与此配置关联的登录组，请从列表中选择它，然后单击&ldquo;更改&rdquo;<b class="cBold"></b>。 </li>
+<li class="pSmartList1">单击&ldquo;更新&rdquo;<b class="cBold"></b>保存更改。</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="Creating a new configuration">创建新配置</a></h3>
+<p class="pBody">若要创建新配置，Aventail Connect 必须脱机（即，未连接到 VPN）。</p>
+<div><ol>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，从&ldquo;配置&rdquo;列表中选择&ldquo;创建/编辑配置&rdquo;<i class="cItalic"></i><b class="cBold"></b>。</li>
+<li class="pSmartList1">单击&ldquo;VPN 配置&rdquo;区域中的加号 (+)。</li>
+<li class="pSmartList1">向此配置分配一个名称（例如&ldquo;从家里连接&rdquo;<i class="cItalic"></i>）。在登录时，将会在&ldquo;配置&rdquo;<b class="cBold"></b>列表中看到此名称，因此请指定能够最准确地描述其功能的名称。</li>
+<li class="pSmartList1">在&ldquo;主机地址&rdquo;<b class="cBold"></b>框中，输入 VPN 的主机名或 IP 地址。</li>
+<li class="pSmartList1">&ldquo;登录组&rdquo;<b class="cBold"></b>框列出您的管理员已设置的领域。可能只有一个领域，也可能针对不同的用户社区配置了多个领域。 </li>
+<li class="pSmartList1">可以使用&ldquo;身份验证&rdquo;<b class="cBold"></b>区域验证您指定的地址和登录组的登录凭据。  </li>
+<li class="pSmartList1">单击&ldquo;更新&rdquo;<b class="cBold"></b>保存更改。</li>
+</ol></div>
+
+
+<h3 class="pHeading3"><a name="Deleting a configuration">删除配置</a></h3>
+<p class="pBody">若要删除配置，Aventail Connect 必须脱机（即，未连接到 VPN）。</p>
+<div><ol>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，从&ldquo;配置&rdquo;列表中选择&ldquo;创建/编辑配置&rdquo;<i class="cItalic"></i><b class="cBold"></b>。</li>
+<li class="pSmartList1">在&ldquo;配置&rdquo;<b class="cBold"></b>列表中，突出显示要删除的 VPN 配置，然后单击减号，或按 <IMG SRC="AppleCommandKey.gif" ALT="Apple Command 键">-Delete。</li>
+</ol></div>
+
+
+<h3 class="pHeading3"><a name="Advanced options">高级选项</a></h3>
+<p class="pBody">当设备收到客户端对资源或 Internet 的访问请求时，可通过几种不同的方式处理这些请求。您的管理员在 AMC 中选择配置：</p>
+<div><ul>
+<li class="pSmartList1">在拆分隧道模式下，只有通往已在 AMC 中指定的资源的流量才重定向到设备，所有其他流量均正常路由。换句话说，您的管理员会设置一个安全资源列表，因为这些资源只能通过本设备访问，但是您可以对未在资源列表中明确列出的任何内容（例如，其他 Internet 网站）进行不受限制的访问。</li>
+
+<li class="pSmartList1">在全部重定向模式（该方法更安全、限制性更强）下，所有流量都通过设备重定向：不允许您访问不在允许的资源列表中的任何内容。</li> 
+
+<li class="pSmartList1">您的管理员可以选择向您授予对本地打印机和文件共享的访问权限，而不考虑隧道模式。</li>  
+</ul></div>
+
+<p class="pBody">如果您在访问资源时遇到问题，您的管理员可能指示您在&ldquo;高级&rdquo;<b class="cBold"></b>设置中进行更改。仅当管理员已经针对此特定 VPN 配置为您配置了拆分隧道模式时，&ldquo;网络冲突解析&rdquo;<b class="cBold"></b>选项才可用。如果需要进行配置更改，必须在 Connect Tunnel 断开连接时进行。</p>
+
+<p class="pBody">例如，假设您有一个主机资源（一台 Web 服务器），地址为 192.168.230.1。您正在外地出差，而您要使用的打印机位于本地网络上的会议中心中，并且它使用该同一地址。您使用的领域已针对拆分隧道模式进行配置，并且您的管理员已选择允许您访问本地打印机和文件共享。若要允许您在会议中心进行打印，您的管理员可能指示您打开&ldquo;高级&rdquo;<b class="cBold"></b>设置，单击&ldquo;首选本地网络资源访问&rdquo;<b class="cBold"></b>，然后单击&ldquo;更新&rdquo;<b class="cBold"></b>。</p>
+<br>
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Processing Server Certificates">处理服务器证书</a></h2>
+
+<p class="pBody">有些 VPN 配置需要您先接受服务器证书，然后才能获得对受保护网络资源的访问权限。服务器证书本质上是一个用于验证服务器标识的数字签名。</p>
+
+<p class="pBody">如果您访问的网络资源使用了服务器证书，Aventail Connect 可能会显示该证书。在接受服务器证书之前，先确认它是否来自可信来源。由于任何人都可以颁发证书，因此应只接受来自可信来源的证书。否则，接收的信息可能无效。如果您不确定是否应接受证书，请咨询管理员。</p>
+<br>
+<hr width="100%" align=LEFT>
+
+
+
+<h2 class="pHeading2"><a name="Configuring Proxy Server Settings">配置代理服务器设置</a>（仅限 Linux） </h2>
+
+<p class="pBody">对于 Linux 用户，某些网络资源可能要求通过 Internet 代理服务器传递流量，代理服务器提供从本地网络到 Internet 的访问。管理员负责确定是否需要代理服务器，但您偶尔也需要指定代理服务器设置。</p>
+
+<p class="pBody">许多情况下，Aventail Connect 都可以自动检测 Internet 代理服务器设置。但是，如果无法自动检测到设置，则必须手动指定它们。</p>
+
+<p class="pBody">本节介绍如何指定出站代理服务器设置。仅当 Aventail Connect 脱机（即，未连接到 VPN）时，该选项才可用，并且仅在程序的 Linux 版本中可用。</p>
+
+<h3 class="pHeading3">配置出站代理服务器设置 (Linux)</h3>
+<div><ol>
+<li class="pSmartList1">在 Aventail Connect 登录对话框中，从&ldquo;配置&rdquo;列表中选择&ldquo;创建/编辑配置&rdquo;<i class="cItalic"></i><b class="cBold"></b>。</li>
+<li class="pSmartList1">单击&ldquo;代理服务器&rdquo;<b class="cBold"></b>选项卡。</li>
+<li class="pSmartList1">单击以下选项之一：</li>
+<div><ul>
+<li class="pSmartList2"><b class="cBold">直接连接到 Internet：</b>允许直接连接到 Internet，不进行出站代理服务器重定向。</li>
+<li class="pSmartList2"><b class="cBold">自动检测代理服务器设置：</b>配置客户端以检测和使用远程网络上定义的出站代理服务器设置。</li>
+<li class="pSmartList2"><b class="cBold">手动代理服务器配置：</b>允许您手动指定代理服务器设置。在&ldquo;SSL&rdquo;<b class="cBold"></b>框中，键入 Internet 代理服务器的主机名或 IP 地址。在&ldquo;端口&rdquo;<b class="cBold"></b>框中，键入服务器所侦听的端口号。选择&ldquo;对所有协议均使用相同的代理服务器&rdquo;<b class="cBold"></b>以便对所有流量均使用指定的 <b class="cBold">SSL</b> 服务器，或者为 HTTP、FTP 或 SOCKS 流量指定不同的代理服务器及其端口号。或者，在&ldquo;不对以下项使用代理服务器&rdquo;<b class="cBold"></b>框中，可以指定不希望通过代理服务器重定向的主机名或 IP 地址。</li>
+<li class="pSmartList2"><b class="cBold">自动代理服务器配置 URL：</b>配置客户端以指定用于指定代理服务器设置的代理自动配置 (<I>.pac</I>) 文件。在文本框中，键入承载 <cItalic>.pac</i> 文件的服务器的 URL。</li>
+</ul>
+<li class="pSmartList1">单击&ldquo;确定&rdquo;<b class="cBold"></b>。将出现登录对话框。</li>
+</ol></div>
+<br>
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Troubleshooting">疑难解答</a></h2>
+
+<p class="pBody">本节介绍如何排查基本 Aventail Connect Tunnel 客户端问题。如果连接到 VPN 时遇到问题，或者在访问本地或远程网络资源时遇到问题，请查看以下方法是否可解决您的问题。如果问题持续存在，请与您的系统管理员联系。</p>
+
+<p class="pBody"><b class="cBold">无法连接</b></p>
+<p class="pBody">如果在连接到 VPN 时遇到问题，可检查下面几项：</p>
+<div>
+<ul>
+<li class="pSmartList1">确保 Aventail Connect 正在运行并且已连接到网络。有关详细信息，请参阅<a href="#How to Tell if Aventail Connect is Running">如何判断 Aventail Connect 是否正在运行</a>。</li>
+
+<li class="pSmartList1">在 Aventail Connect&ldquo;属性&rdquo;<b class="cBold"></b>对话框中验证您是否启动与正确的主机名或 IP 地址的连接。有关详细信息，请参阅<a href="#Starting Aventail Connect">启动 Aventail Connect</a>。</li>
+
+<li class="pSmartList1">在 Aventail Connect&ldquo;属性&rdquo;<b class="cBold"></b>对话框中验证您是否启动与正确登录组的连接。有关详细信息，请参阅<a href="#Specifying a Login Group">指定登录组</a>。</li>
+
+<li class="pSmartList1">如果您使用个人防火墙，可能需要先对其进行配置，然后才能访问 VPN。为此，请配置防火墙以允许流量通过端口 443 流向 VPN 的主机名或 IP 地址。</li>
+</ul>
+</div>
+
+<p class="pBody"><b class="cBold">无法访问资源或 Internet</b></p>
+<p class="pBody">您的设备可能归入错误的安全区域：</p>
+
+<div>
+<ul>
+<li class="pSmartList1">您的管理员可能要求您确认您所属的安全区域。如果已配置安全区域，您可以将光标停留在任务栏通知区域中的 Aventail Connect 图标上，来查看当前区域。</li>
+</ul>
+</div>
+
+<p class="pBody">当设备收到客户端对资源或 Internet 的访问请求时，可通过几种不同的方式处理这些请求。您的管理员在 AMC 中选择配置：</p>
+
+<div>
+<ul>
+<li class="pSmartList1">在拆分隧道模式下，只有通往已在 AMC 中指定的资源的流量才重定向到设备，所有其他流量均正常路由。换句话说，您的管理员会设置一个安全资源列表，因为这些资源只能通过本设备访问，但是您可以对未在资源列表中明确列出的任何内容（例如，其他 Internet 网站）进行不受限制的访问。</li>
+
+<li class="pSmartList1">在全部重定向模式（该方法更安全、限制性更强）下，所有流量都通过设备重定向：不允许您访问不在允许的资源列表中的任何内容。</li>
+
+<li class="pSmartList1">您的管理员可以选择向您授予对本地打印机和文件共享的访问权限，而不考虑隧道模式。 </li>
+</ul>
+</div>
+
+<p class="pBody">如果您在访问资源时遇到问题，您的管理员可能指示您在&ldquo;属性&rdquo;<B></B>对话框的&ldquo;高级&rdquo;<B></B>选项卡上进行更改。仅当管理员已经为您配置拆分隧道模式时，&ldquo;网络冲突解析&rdquo;<B></B>选项才可用。如果需要进行配置更改，必须在 Connect Tunnel 断开连接时进行。</p>
+
+<p class="pBody">例如，假设您有一个主机资源（一台 Web 服务器），地址为 192.168.230.1。您正在外地出差，而您要使用的打印机位于本地网络上的会议中心中，并且它使用该同一地址。您使用的领域已针对拆分隧道模式进行配置，并且您的管理员已选择允许您访问本地打印机和文件共享。若要允许您在会议中心进行打印，您的管理员可能指示您打开 Connect Tunnel&ldquo;属性&rdquo;<B></B>对话框，单击&ldquo;高级&rdquo;<B></B>选项卡，然后为您的会话单击&ldquo;首选本地网络资源访问&rdquo;<B></B>。</p>
+
+<hr>
+    <table align="right">
+      <tr>
+<td style="text-align: left; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif">&copy; 2011 SonicWALL, Inc.</td>
+      </tr>
+    </table>
+</body>
+</html>
+

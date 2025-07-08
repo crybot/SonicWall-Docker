@@ -1,0 +1,379 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>SonicWALL / Aventail Connect Tunnel Client Help</title>
+	
+<style>
+
+b.cBold
+{
+  font-weight: bold
+}
+
+p.pBody
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+p.pBodyRelative
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+li.pSmartList1
+ {
+ 	color: black;
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0em;
+    text-transform: none;
+}
+
+li.pSmartList2
+ {
+ 	color: black;
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0em;
+    text-transform: none;
+}
+
+h1.pHeading1
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+h2.pHeading2
+{
+  color: #003366;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h3.pHeading3
+{
+  color: #003366;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 2em;
+  margin-right: 3em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 class="pHeading1">SonicWALL / Aventail Connect Tunnel Client Help</h1>
+
+<p class="pBody">The SonicWALL / Aventail Connect Tunnel with Smart Tunneling is a client component of the SonicWALL / Aventail virtual private network (VPN) solution, which enables secure, authorized access to Web-based and client/server applications, and file shares. This help information describes Connect Tunnel for the Mac OS X and Linux operating systems.</p>
+<p class="pBody">Connect Tunnel on Mac and Linux platforms supports IPv6, which is preferred if both IPv4 and IPv6 are available.
+<br>
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Introduction">Introduction</a></h2>
+
+<p class="pBody">With Connect Tunnel you can connect to network resources that are protected by the SonicWALL Aventail VPN and access the following types of resources:
+<div><ul>
+<li class="pSmartList1"><b class="cBold">Client/server resources:</b> Client/server applications, thin client applications, and terminal services.</li>
+<li class="pSmartList1"><b class="cBold">Web sites and applications:</b> Web content and Web-based applications that can be accessed through a browser.</li>
+<li class="pSmartList1"><b class="cBold">Network shares:</b> Shared folders and files, and mapped drives.</li>
+</ul></div>
+<h3 class="pHeading3"><a name="System requirements">System requirements</a></h3>
+<p class="pBody">This client application requires JVM (Java Virtual Machine) and is intended for use on 32-bit and 64-bit Linux computers and Apple Macintosh-based PPC/IA-32 and PPC/IA-64 computers. </p>
+
+<br>
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Starting Aventail Connect">Starting Aventail Connect</a></h2>
+
+<p class="pBody">To access network resources through Aventail Connect, your identity must first be verified. This ensures that only authorized users can access protected network resources. The credentials used to verify your identity typically consist of a username and password or passcode.</p>
+
+<h3 class="pHeading3"><a name="To start Aventail Connect Macintosh">To Start Aventail Connect (Macintosh)</a></h3>
+<div><ol>
+<li class="pSmartList1">In the Finder, double-click <b class="cBold">Applications</b>, and then double-click the Aventail Connect icon. The Aventail Connect login dialog appears.</li>
+<li class="pSmartList1">In the <b class="cBold">Configuration</b> list, select a VPN configuration and Click <b class="cBold">Connect</b>. If there are no saved configurations, you must create one; see <a href="#Creating a New Configuration">Creating a New Configuration</a> for more information.</li> 
+<li class="pSmartList1">If you access a network resource that uses self-signed or invalid server certificate, Aventail Connect will display the certificate. Verify that the server certificate is from a trusted source before accepting it. Because anyone can issue a certificate, you should accept certificates only from trusted sources. Otherwise, the information you receive may be invalid. If you have any concerns about whether to accept a certificate, check with your administrator.</li>
+<li class="pSmartList1">In the Login Group selection, choose your Login Group and Click <b class="cBold">Ok</b>.</li>
+<li class="pSmartList1">In the <b class="cBold">Username</b> box, type your username.</li>
+<li class="pSmartList1">In the <b class="cBold">Password</b> or <b class="cBold">Passcode</b> box, type your password or passcode. (Passwords may be case-sensitive: make sure the Caps Lock and Num Lock keys are not enabled.)</li>
+<li class="pSmartList1">Click <b class="cBold">Ok</b>. A  message in the login dialog indicates the status of the VPN connection.</li>
+</ol></div>
+
+<p class="pBody"><b class="cBold">&nbsp;&nbsp;&nbsp;Notes</b></p>
+<div><ul>
+<li class="pSmartList1">In the Aventail Connect login dialog, you can initiate a connection to a different VPN or login group by choosing a different configuration from the list.</li>
+<li class="pSmartList1">From the <b class="cBold">Applications</b> directory, you can drag the Aventail Connect icon to the dock for easier access.</li>
+</ul></div>
+
+<h3 class="pHeading3"><a name="To start Aventail Connect Linux">To Start Aventail Connect (Linux)</a></h3>
+<div><ol>
+<li class="pSmartList1">After Aventail Connect is installed, you can run <em>startctui</em> from any location. You can also start Aventail Connect by double-clicking the Aventail Connect icon in the desktop. The Aventail Connect login dialog appears.</li>
+<li class="pSmartList1">In the <b class="cBold">Configuration</b> list, select a VPN configuration and Click <b class="cBold">Connect</b>. If there are no saved configurations, you must create one; see <a href="#Creating a New Configuration">Creating a New Configuration</a> for more information.</li> 
+<li class="pSmartList1">If you access a network resource that uses self-signed or invalid server certificate, Aventail Connect will display the certificate. Verify that the server certificate is from a trusted source before accepting it. Because anyone can issue a certificate, you should accept certificates only from trusted sources. Otherwise, the information you receive may be invalid. If you have any concerns about whether to accept a certificate, check with your administrator.</li>
+<li class="pSmartList1">In the Login Group selection, choose your Login Group and Click <b class="cBold">Ok</b>.</li>
+<li class="pSmartList1">In the <b class="cBold">Username</b> box, type your username.</li>
+<li class="pSmartList1">In the <b class="cBold">Password</b> or <b class="cBold">Passcode</b> box, type your password or passcode. (Passwords may be case-sensitive: make sure the Caps Lock and Num Lock keys are not enabled.)</li>
+<li class="pSmartList1">Click <b class="cBold">Ok</b>. A  message in the login dialog indicates the status of the VPN connection.</li>
+</ol></div>
+
+<p class="pBody"><b class="cBold">&nbsp;&nbsp;&nbsp;Notes</b></p>
+<div><ul>
+<li class="pSmartList1">In the Aventail Connect login dialog, you can initiate a connection to a different VPN or login group by choosing a different configuration from the list.</li>
+</ul></div>
+
+
+<h3 class="pHeading3"><a name="Specifying a Login Group">Specifying a Login Group</a></h3>
+
+<p class="pBody">Aventail Connect enables you to log in to different login groups if necessary (for example, if you alternate between logging in to the &#147;Sales&#148; and &#147;Marketing&#148; groups). You may need to provide different authentication credentials for each login group.</p>
+<p class="pBody">You must specify a login group each time you initiate a connection to your VPN. This option is available only when Aventail Connect is offline (that is, when not connected to your VPN).</p>
+
+<p class="pBody"><b class="cBold">To specify the login group</b></p>
+
+<div><ol>
+<li class="pSmartList1">In the Aventail Connect login dialog box, choose a <b class="cBold">Configuration</b> and click <b class="cBold">Edit</b>.</li>
+<li class="pSmartList1">In the Edit <b class="cBold">Configuration</b> screen click <b class="cBold">Forget Selection</b> and choose <b class="cBold">Save</b>.</li>
+<li class="pSmartList1">Choose the saved <b class="cBold">Configuration</b> and click <b class="cBold">Connect</b>.</li>
+<li class="pSmartList1">Select the new Login Group and click <b class="cBold">Ok</b>.</li>
+</ol></div>
+
+
+<h3 class="pHeading3"><a name="Connecting to a Different VPN">Connecting to a Different VPN</a></h3>
+
+<p class="pBody">To specify a different VPN to connect to, Aventail Connect must be offline (that is, not connected to your VPN).</p>
+
+<p class="pBody"><b class="cBold">To specify the host name or IP address of the VPN</b></p>
+<div><ol>
+<li class="pSmartList1">In the Aventail Connect login dialog box, click <b class="cBold">Add Configuration</b>.</li>
+<li class="pSmartList1">Enter a name for the configuration in the <b class="cBold">Name</b> box.</li>
+<li class="pSmartList1">In the <b class="cBold">Server</b> box, type the host name or the IP address of the VPN you want to connect to.</li>
+<li class="pSmartList1">Click <b class="cBold">OK</b>. The login dialog box appears.</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="How to tell if Aventail Connect is running">How to tell if Aventail Connect is running</a></h3>
+
+<p class="pBody">When Aventail Connect is running and connected to the VPN, a connection status dialog appears. This dialog contains basic connection information, including the name of the configuration you are currently using, and the host name or IP address of the VPN you are connected to. You can minimize this dialog; on Linux systems, closing this dialog will end your network connection and close Aventail Connect.</p>
+
+<br>
+<hr width="100%" align=LEFT>
+<h2 class="pHeading2"><a name="Quitting Aventail Connect">Quitting Aventail Connect</a></h2>
+
+<p class="pBody">To end your VPN session and disconnect  from the remote network, click <b class="cBold">Disconnect</b> in the Aventail Connect login dialog.</p>
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Managing Configurations">Managing Configurations</a></h2>
+<p class="pBody">To simplify the login process you can set up one or more VPN configurations. If, for example, you sometimes connect to a different login group or a different VPN, you can save these settings under different names. </p>
+
+<h3 class="pHeading3"><a name="Viewing Aventail Connect settings">Viewing  Aventail Connect Settings</a></h3>
+<p class="pBody">To view your settings, Aventail Connect must be offline (that is, not connected to your VPN).</p>
+<div><ol>
+<li class="pSmartList1">In the Aventail Connect login dialog, select the <i class="cItalic">Configuration</i> from the  <b class="cBold">Configuration</b> list.</li>
+<li class="pSmartList1">Click on <i class="cItalic">Edit</i>.</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="Editing Aventail Connect settings">Editing Aventail Connect Settings</a></h3>
+<p class="pBody">To edit your settings, Aventail Connect must be offline (that is, not connected to your VPN).</p>
+<div><ol>
+<li class="pSmartList1">In the Aventail Connect login dialog, select  <i class="cItalic">Configuration</i> from the  <b class="cBold">Configuration</b> list.</li>
+<li class="pSmartList1">Click <b class="cBold">Edit</b> to edit the configuration.</li>
+<li class="pSmartList1">Make edits to <b class="cBold">Name</b> or <b class="cBold">Server</b> box as necessary.</li>
+<li class="pSmartList1">Click <b class="cBold">Save</b> to save your changes.</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="Creating a new configuration">Creating a New Configuration</a></h3>
+<p class="pBody">To create a new configuration, Aventail Connect must be offline (that is, not connected to your VPN).</p>
+<div><ol>
+<li class="pSmartList1">In the Aventail Connect login dialog, select <i class="cItalic">Add Configuration</i> from the  <b class="cBold">Configuration</b> list.</li>
+<li class="pSmartList1">Assign a name to this configuration  (for example, <i class="cItalic">Connect from home</i>). This is the name that you will see in the <b class="cBold">Configuration</b> list when you log in, so specify one that best describes its function.</li>
+<li class="pSmartList1">In the <b class="cBold">Server</b> box, enter the host name or IP address for the VPN.</li>
+<li class="pSmartList1">Click <b class="cBold">Save</b> to save your changes.</li>
+</ol></div>
+
+
+<h3 class="pHeading3"><a name="Deleting a configuration">Deleting a Configuration</a></h3>
+<p class="pBody">To delete a configuration, Aventail Connect must be offline (that is, not connected to your VPN).</p>
+<div><ol>
+<li class="pSmartList1">In the Aventail Connect login dialog, select the <i class="cItalic">Configuration</i> from the  <b class="cBold">Configuration</b> list and click <b class="cBold">Edit</b>.</li>
+<li class="pSmartList1">Click <b class="cBold">Delete</b> to delete the configuration.</li>
+</ol></div>
+
+
+<h3 class="pHeading3"><a name="Advanced options">Advanced Options</a></h3>
+<p class="pBody">When requests for resources or Internet access are received from clients by the appliance, they can be handled a few different ways. Your administrator makes this configuration choice in AMC:</p>
+<div><ul>
+<li class="pSmartList1">In split tunnel mode, only traffic destined for resources that have been specified in AMC is redirected to the appliance, and all other traffic is routed as normal. In other words, your administrator sets up a list of resources that are kept secure because they are accessible only through the appliance, but you have open access to anything not spelled out in the resource list (for example, other Internet sites).</li>
+
+<li class="pSmartList1">In redirect all mode, which is the more secure (and restrictive) approach, all traffic is redirected through the appliance: you are not allowed to access anything that is not in the list of allowed resources.</li> 
+
+<li class="pSmartList1">Your administrator can opt to give you access to local printers and file shares, regardless of the tunnel mode.</li>  
+</ul></div>
+
+<p class="pBody">If you are having trouble accessing resources, your administrator may instruct you to make a change in the <b class="cBold">Advanced</b> settings. The <b class="cBold">Network conflict resolution</b> options are available only when your administrator has configured you for split tunnel mode for this particular VPN configuration. If you need to make a configuration change, it must be done while Connect Tunnel is disconnected.</p>
+
+<p class="pBody">For example, let’s say you have a host resource&#151;a Web server&#151;with an address of 192.168.230.1. You are on a business trip and the printer you want to use is on a local network at a conference center, and it uses that same address. You are using a realm that is configured for split tunnel mode, and your administrator has opted to give you access to local printers and file shares. To enable you to print at the conference center, your administrator may instruct you to open the <b class="cBold">Advanced</b> settings, click <b class="cBold">Prefer local network resource access</b>, and then click <b class="cBold">Update</b>.</p>
+<br>
+
+<h3 class="pHeading3"><a name="Credential caching">Credential Caching/Secure Network Detection</a></h3>
+<p class="pBody">If your administrator has allowed the Credential Caching policy, you can enable or disable it via the Remember Credential check box on the Connect Tunnel Options dialog box. If enabled (checked) on Linux, the policy works while Connect Tunnel is running. However, on Mac OS the information is stored in the keychain and persists across reboots.</p>
+<p class="pBody">If Secure Network Detection is enabled, Connect Tunnel is put into one of three states when connecting to an appliance for the first time:</p>
+<div><ul>
+<li class="pSmartList1">Connected: The machine is not in a secure location and requires a VPN connection to access resources.</li>
+
+<li class="pSmartList1">Idle: The machine is in a secure network and does not need the VPN connection to access resources.</li> 
+
+<li class="pSmartList1">Disconnect/Error: The connection is dropped and disconnected due to external network events (for example, network change, dropped wifi signal, etc.).</li>  
+</ul></div>
+<br>
+
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Processing Server Certificates">Processing Server Certificates</a></h2>
+
+<p class="pBody">Some VPN configurations require that you accept a server certificate before you can gain access to a protected network resource. A server certificate is essentially a digital signature that verifies the server identity.</p>
+
+<p class="pBody">If you access a network resource that uses a server certificate, Aventail Connect may display the certificate. Verify that the server certificate is from a trusted source before accepting it. Because anyone can issue a certificate, you should accept certificates only from trusted sources. Otherwise, the information you receive may be invalid. If you have any concerns about whether to accept a certificate, check with your administrator.</p>
+<br>
+<hr width="100%" align=LEFT>
+
+
+
+<h2 class="pHeading2"><a name="Configuring Proxy Server Settings">Configuring Proxy Server Settings</a> (Linux only) </h2>
+
+<p class="pBody">For Linux users, some network resources may require traffic to pass through an Internet proxy server, which provides access from your local network to the Internet. Your administrator determines whether a proxy server is required, but you may occasionally be required to specify settings for it.</p>
+
+<p class="pBody">In many cases, Aventail Connect can automatically detect your Internet proxy server settings. If the settings cannot be automatically detected, however, you must manually specify them.</p>
+
+<p class="pBody">This section describes how to specify outbound proxy server settings. This option is available only when Aventail Connect is offline (that is, when not connected to your VPN), and only in the Linux version of the program.</p>
+
+<h3 class="pHeading3">To configure outbound proxy server settings (Linux)</h3>
+<div><ol>
+<li class="pSmartList1">In the Aventail Connect login dialog, click <i class="cItalic">Advanced</i>.</li>
+<li class="pSmartList1">Click the <b class="cBold">Proxy</b> tab.</li>
+<li class="pSmartList1">Click one of the following options:</li>
+<div><ul>
+<li class="pSmartList2"><b class="cBold">Direct Connection to the Internet:</b> Enables a direct connection to the Internet, with no outbound proxy server redirection.</li>
+<li class="pSmartList2"><b class="cBold">Automatically detect proxy settings:</b> Configures the client to detect and use the outbound proxy server settings as defined on your remote network.</li>
+<li class="pSmartList2"><b class="cBold">Manual proxy configuration:</b> Enables you to manually specify proxy server settings. In the <b class="cBold">SSL</b> box, type the host name or IP address of the Internet proxy server. In the <b class="cBold">Port</b> box, type the number of the port on which the server is listening. Select the <b class="cBold">Use the same proxy server for all protocols</b> to use the specified <b class="cBold">SSL</b> server for all traffic, or specify different proxy servers and their port numbers for HTTP, FTP, or SOCKS traffic. Optionally, in the <b class="cBold">No proxy for</b> box, you can specify host names or IP addresses that you do not want redirected through a proxy server.</li>
+<li class="pSmartList2"><b class="cBold">Automatic proxy configuration URL:</b> Configures the client to retrieve a proxy auto-configuration (<I>.pac</I>) file that specifies proxy-server settings. In the text box, type the URL of the server that hosts the <cItalic>.pac</i> file.</li>
+</ul>
+<li class="pSmartList1">Click <b class="cBold">OK</b>. The login dialog appears.</li>
+</ol></div>
+<br>
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Troubleshooting">Troubleshooting</a></h2>
+
+<p class="pBody">This section describes how to troubleshoot basic Aventail Connect tunnel client problems. If you are having trouble connecting to your VPN, or accessing local or remote network resources, see if your problem is addressed by the following. If the problem persists, contact your system administrator.</p>
+
+<h3 class="pHeading3">Unable to Connect</h3>
+
+<p class="pBody">Here are a few items to check if you are having trouble connecting to your VPN:</p>
+<div>
+<ul>
+<li class="pSmartList1">Make sure that Aventail Connect is running and actively connected to the network. For more information, see <a href="#How to Tell if Aventail Connect is Running">How to Tell if Aventail Connect is Running</a>.</li>
+
+<li class="pSmartList1">Verify in the Aventail Connect <b class="cBold">Properties</b> dialog box that you are initiating a connection to the correct host name or IP address. For more information, see <a href="#Starting Aventail Connect">Starting Aventail Connect</a>.</li>
+
+<li class="pSmartList1">Verify in the Aventail Connect <b class="cBold">Properties</b> dialog box that you are initiating a connection to the correct login group. For more information, see <a href="#Specifying a Login Group">Specifying a Login Group</a>.</li>
+
+<li class="pSmartList1">If you use a personal firewall, you may need to configure it before you can access your VPN. To do this, configure the firewall to enable traffic to the VPN host name or IP address over port 443.</li>
+</ul>
+</div>
+
+<h3 class="pHeading3">Unable to Access Resources or the Internet</h3>
+<p class="pBody">Your device may have been classified into the wrong security zone:</p>
+
+<div>
+<ul>
+<li class="pSmartList1">Your administrator may ask you to confirm the security zone into which you have been classified. If security zones have been configured, you can view your current zone by pausing on the Aventail Connect icon in the taskbar notification area with your cursor.</li>
+</ul>
+</div>
+
+<p class="pBody">When requests for resources or Internet access are received from clients by the appliance, they can be handled a few different ways. Your administrator makes this configuration choice in AMC:</p>
+
+<div>
+<ul>
+<li class="pSmartList1">In split tunnel mode, only traffic destined for resources that have been specified in AMC is redirected to the appliance, and all other traffic is routed as normal. In other words, your administrator sets up a list of resources that are kept secure because they are accessible only through the appliance, but you have open access to anything not spelled out in the resource list (for example, other Internet sites).</li>
+
+<li class="pSmartList1">In redirect all mode, which is the more secure (and restrictive) approach, all traffic is redirected through the appliance: you are not allowed to access anything that is not in the list of allowed resources.</li>
+
+<li class="pSmartList1">Your administrator can opt to give you access to local printers and file shares, regardless of the tunnel mode. </li>
+</ul>
+</div>
+
+<p class="pBody">If you are having trouble accessing resources, your administrator may instruct you to make a change in the Connect tunnel <B>Properties</B> dialog box, on the <B>Advanced</B> tab. The <B>Network conflict resolution</B> options are available only when your administrator has configured you for split tunnel mode. If you need to make a configuration change, it must be done while the Connect tunnel is disconnected.</p>
+
+<p class="pBody">For example, you have a host resource&#151;a Web server&#151;with an address of 192.168.230.1. You are on a business trip and the printer you want to use is on a local network at a conference center, and it uses that same address. You are using a realm that is configured for split tunnel mode, and your administrator has opted to give you access to local printers and file shares. To enable you to print at the conference center, your administrator may instruct you to open the Connect tunnel <B>Properties</B> dialog box, click the <B>Advanced</B> tab, and then click <B>Prefer local network resource access</B> for your session.</p>
+
+<hr>
+    <table align="right">
+      <tr>
+        <td style="text-align: left; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif">&copy;2013 Dell Inc.</td>
+      </tr>
+    </table>
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+.TH AVENTAIL_CONNECT_HELP 1 "Version 9.5.0 (c)2012 SonicWALL, Inc."
+
+.SH NAME
+SonicWALL Aventail Connect Client Help \- Working with Aventail Connect
+
+.SH SYNOPSIS
+startct
+
+.SH OVERVIEW
+The SonicWALL Aventail Connect client is a client component of the SonicWALL Aventail E-Class Secure Remote Access (SRA) virtual private network solution, which enables secure, authorized access to network resources that are protected by the SonicWALL Aventail appliance. Aventail Connect enables you to securely access client/server resources (client/server applications, thin client applications, and terminal services), Web sites and applications (Web content and Web-based applications that can be accessed through a browser), and network shares (shared folders and files, and mapped drives).
+
+.SH LOGIN_GROUPS
+Aventail Connect enables you to log in to different login groups. In most cases, your administrator will have configured a default login group that you will log in to. You can, however, specify a different login group if necessary (for example, if you alternate between logging in to the "Sales" and "Marketing" groups). You may need to provide different authentication credentials for each login group.
+
+.SH STARTING_AVENTAIL_CONNECT
+To start Aventail Connect, in the \fB/usr/local/Aventail\fP directory, type \fBstartct\fP and then press Enter. At the \fBEnter Appliance HOST/IP\fP prompt, type the host name or IP address of the VPN you want to log in to and then press Enter. Alternatively, to log in to the default VPN that is listed in parentheses, simply press Enter. At the \fBChoose Login Group/Enter Your Choice\fP prompt, type the number that corresponds to the login group that you want to log in to, and then press Enter. Depending on how your administrator configured Aventail Connect, some login groups may not appear in the list; however, you can still log in to a "hidden" login group (if you are authorized to do so) by typing its name at the \fBChoose Login Group\fP prompt and then pressing Enter. 
+
+At the \fBEnter Username\fP prompt, type your username and then press Enter. In the \fBPassword\fP box, type your password and then press Enter. (Passwords may be case-sensitive. Make sure the Caps Lock and Num Lock keys are not enabled.) The Aventail Connect client initiates the connection to the VPN, and then the \fBCONNECT CMD\fP prompt appears. You can now access your VPN resources through the Aventail Connect client.
+
+Note: During login, a message may appear alerting you to potential local IP address conflicts. This information can be useful for troubleshooting address conflicts.
+
+.SH PROCESSING_SERVER_CERTIFICATES
+Some VPN configurations require that you accept a server certificate before you can gain access to a protected network resource. A server certificate is essentially a digital signature that verifies a server's identity. If you access a network resource that uses a server certificate, Aventail Connect may display the certificate details. Verify that the server certificate is from a trusted source before accepting it. (Because anyone can issue a certificate, you should accept certificates only from trusted sources. Otherwise, the information you receive may be invalid. If you have any concerns about whether to accept a certificate, check with your administrator.)
+
+When you see a trusted certificate prompt, verify that the certificate is associated with the correct server, and then accept or reject the certificate. If you reject the certificate, your connection is not established. If you accept the certificate, the certificate is accepted as valid, and the login process continues.
+
+.SH SPECIFYING_PROXY_SERVER_SETTINGS
+Some network resources require traffic to pass through an Internet proxy server, which provides access from your local network to the Internet. Your administrator determines whether a proxy server is required, but you may occasionally be required to specify proxy server settings. For information about specifying proxy server settings, see the COMMAND_LINE_OPTIONS section of this document.
+
+.SH COMMANDS
+.TP
+\fBCtrl+z bg\fP
+Forces Aventail Connect to run in the background. Type this command from the CONNECT CMD prompt.
+
+.TP
+\fBfg\fP
+Brings Aventail Connect to the foreground. Type this command from the shell prompt.
+
+.TP
+\fBexit\fP
+Use when Aventail Connect is running in the foreground. Quits Aventail Connect, ends your VPN session, and disconnects you from the remote network. Type this command from the CONNECT CMD prompt.
+
+.TP
+\fBstopct\fP
+Use when Aventail Connect is running in the background. Quits Aventail Connect, ends your VPN session, and disconnects you from the remote network. Type this command from the shell prompt.
+
+.SH COMMAND_LINE_OPTIONS
+Usage: startct [options] [appliance]
+
+.SS Options:
+.TP
+\fB--help\fP
+Display usage summary
+
+.TP
+\fB--man\fP
+Display man page
+
+.TP
+\fB--version\fP
+Display Aventail Connect version
+
+.TP
+\fB-y\fP
+Accept appliance certificate even if verification fails
+
+.TP
+\fB-u<name>\fP
+Username
+
+.TP
+\fB-p<password>\fP
+Password
+
+.TP
+\fB-l<group>\fP
+Login group
+
+.TP
+\fB-d\fP
+Log extra debugging information in /var/log/AvConnect.log
+
+.TP
+\fB--autologon\fP
+Automatically log in and run Aventail Connect in the background
+
+.TP
+\fB--use-proxy\fP
+Use proxy server to connect. On Linux, if a proxy is not configured, this option triggers proxy configuration.
+
+.TP
+\fB--proxy-user\fP
+Username for proxy login
+
+.TP
+\fB--proxy-pass\fP
+Password for proxy login
+
+.TP
+\fB--proxy-config\fP
+On Linux, configures proxy for Aventail Connect and enables proxy use during connection
+
+.TP
+\fB--ncr=<option>\fP
+Network conflict resolution options (for split tunnel mode only) are:
+.RS15
+.HP 
+\fBA\fP
+Use administrator preference (default)
+.HP 
+\fBL\fP
+Prefer local network resources
+.HP 
+\fBR\fP
+Prefer remote network resources
+.RE
+
+.SH EXAMPLES
+In these examples, <app-ip/host> refers to the VPN to which you want to connect. Specify the VPN using either an IP address or host name.
+
+.TP
+\fBStart Aventail Connect:\fP
+$ startct -y -r<realm> -u<username> -p<password> <app-ip/host>
+
+.TP
+\fBStart Aventail Connect in debug mode:\fP
+$ startct -y -r<realm> -u<username> -p<password> -d <app-ip/host>
+
+.TP
+\fBStart Aventail Connect to run in the background:\fP
+$ startct -y -r<realm> -u<username> -p<password> --autologon <app-ip/host>
+
+.TP
+\fBStart Aventail Connect to run in the background with proxy:\fP
+$ startct -y -r<realm> -u<username> -p<password> --autologon --use-proxy --proxy-user=<proxyuser> --proxy-pass=<proxypassword> <app-ip/host>
+
+.TP
+\fBStop Aventail Connect when running in the background:\fP
+$ stopct
+

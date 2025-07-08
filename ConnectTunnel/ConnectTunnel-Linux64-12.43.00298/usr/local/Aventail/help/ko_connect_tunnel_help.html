@@ -1,0 +1,389 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<!-- Inserted by TRADOS: --><META HTTP-EQUIV="content-type" CONTENT="text/html; charset=ks_c_5601-1987">
+
+	<title>SonicWALL / Aventail Connect Tunnel Client 도움말</title>
+	
+<style>
+
+b.cBold
+{
+  font-weight: bold
+}
+
+p.pBody
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+p.pBodyRelative
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+li.pSmartList1
+ {
+ 	color: black;
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0em;
+    text-transform: none;
+}
+
+li.pSmartList2
+ {
+ 	color: black;
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0em;
+    text-transform: none;
+}
+
+h1.pHeading1
+{
+  color: Black;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+h2.pHeading2
+{
+  color: #003366;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h3.pHeading3
+{
+  color: #003366;
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 2em;
+  margin-right: 3em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 class="pHeading1">SonicWALL / Aventail Connect Tunnel Client 도움말</h1>
+
+<p class="pBody">SonicWALL / Aventail Connect Tunnel with Smart Tunneling은 SonicWALL / Aventail VPN(가상 개인 네트워크) 솔루션의 클라이언트 구성 요소로서, 웹 기반 응용 프로그램과 클라이언트/서버 응용 프로그램 및 파일 공유에 대한 안전하고 인증된 액세스를 제공합니다. 이 도움말 정보는 Mac OS X 및 Linux 운영 체제용 Connect Tunnel을 설명합니다.</p>
+
+<div>
+<ul>
+<li class="pSmartList1"><a href="#Introduction">소개</a></li>
+<ul><li class="pSmartList2"><a href="#System requirements">시스템 요구 사항</a></li></ul>
+<li class="pSmartList1"><a href="#Starting Aventail Connect">Aventail Connect 시작</a></li>
+<ul>
+<li class="pSmartList2"><a href="#To Start Aventail Connect (Macintosh)">Aventail Connect를 시작하려면(Macintosh)</a></li>
+<li class="pSmartList2"><a href="#To Start Aventail Connect (Linux)">Aventail Connect를 시작하려면(Linux)</a></li>
+<li class="pSmartList2"><a href="#Specifying a Login Group">로그인 그룹 지정</a></li>
+<li class="pSmartList2"><a href="#Connecting to a Different VPN">다른 VPN으로 연결</a></li>
+<li class="pSmartList2"><a href="#How to Tell if Aventail Connect is Running">Aventail Connect가 실행 중임을 아는 방법</a></li>
+</ul>
+<li class="pSmartList1"><a href="#Quitting Aventail Connect">Aventail Connect 종료</a></li>
+<li class="pSmartList1"><a href="#Managing Configurations">구성 관리</a></li>
+<ul>
+<li class="pSmartList2"><a href="#Viewing Aventail Connect Settings">Aventail Connect 설정 보기</a></li>
+<li class="pSmartList2"><a href="#Editing Aventail Connect Settings">Aventail Connect 설정 편집</a></li>
+<li class="pSmartList2"><a href="#Creating a New Configuration">새 구성 만들기</a></li>
+<li class="pSmartList2"><a href="#Deleting a Configuration">구성 삭제</a></li>
+<li class="pSmartList2"><a href="#Advanced Options">고급 옵션</a></li>
+</ul>
+<li class="pSmartList1"><a href="#Processing Server Certificates">서버 인증서 처리</a></li>
+<li class="pSmartList1"><a href="#Configuring Proxy Server Settings (Linux only)">프록시 서버 설정 구성(Linux만 해당)</a></li>
+<li class="pSmartList1"><a href="#Troubleshooting">문제 해결</a></li>
+</ul>
+</div>
+
+<h2 class="pHeading2"><a name="Introduction">소개</a></h2>
+
+<p class="pBody">Connect Tunnel을 사용하면 SonicWALL Aventail VPN으로 보호되는 네트워크 리소스에 연결하고 다음 리소스 유형에 액세스할 수 있습니다.
+<div><ul>
+<li class="pSmartList1"><b class="cBold">클라이언트/서버 리소스:</b> 클라이언트/서버 응용 프로그램, 씬 클라이언트 응용 프로그램 및 터미널 서비스.</li>
+<li class="pSmartList1"><b class="cBold">웹 사이트 및 응용 프로그램:</b> 브라우저로 액세스할 수 있는 웹 컨텐트 및 웹 기반 응용 프로그램.</li>
+<li class="pSmartList1"><b class="cBold">네트워크 공유:</b> 공유 폴더 및 공유 파일과 매핑된 드라이브.</li>
+</ul></div>
+<h3 class="pHeading3"><a name="System requirements">시스템 요구 사항</a></h3>
+<p class="pBody">이 클라이언트 응용 프로그램을 사용하려면 JVM(Java Virtual Machine)이 필요하며, 32비트 및 64비트 Linux 컴퓨터와 Apple Macintosh 기반 PPC/IA-32 및 PPC/IA-64 컴퓨터에 사용하기 위한 것입니다. </p>
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Starting Aventail Connect">Aventail Connect 시작</a></h2>
+
+<p class="pBody">Aventail Connect를 통해 네트워크 리소스에 액세스하려면 먼저 ID를 확인해야 합니다. 이것은 인증 받은 사용자만 보호된 네트워크 리소스에 액세스할 수 있도록 하기 위한 것입니다. ID 확인에 사용되는 자격 증명은 보통 사용자 이름과 암호 또는 패스코드로 구성됩니다.</p>
+
+<h3 class="pHeading3"><a name="To start Aventail Connect Macintosh">Aventail Connect를 시작하려면(Macintosh)</a></h3>
+<div><ol>
+<li class="pSmartList1">파인더에서 <b class="cBold">Applications</b>를 더블 클릭한 다음 Aventail Connect 아이콘을 더블 클릭합니다. Aventail Connect 로그인 대화 상자가 나타납니다.</li>
+<li class="pSmartList1"><b class="cBold">Configuration(구성)</b> 목록에서 VPN 구성을 선택합니다. 저장된 구성이 없는 경우 새로 만들어야 합니다. 자세한 내용은 <a href="#Creating a New Configuration">새 구성 만들기</a>를 참조하십시오.</li> 
+<li class="pSmartList1">Aventail Connect는 서버 인증서를 사용하는 네트워크 리소스에 액세스할 경우 해당 인증서를 표시합니다. 인증서를 승인하기 전에 서버 인증서가 신뢰할 수 있는 소스의 것인지 확인합니다. 인증서는 누구나 발급할 수 있으므로 사용자는 신뢰할 수 있는 소스가 발급한 인증서만 승인해야 합니다. 그렇게 하지 않으면 사용자가 받은 정보가 잘못된 것일 수 있습니다. 인증서를 승인할지 여부를 알고 싶으면 관리자에게 확인하십시오.</li>
+<li class="pSmartList1"><b class="cBold">Username(사용자 이름)</b> 입력란에 사용자 이름을 입력합니다.</li>
+<li class="pSmartList1"><b class="cBold">Password(암호)</b> 또는 <b class="cBold">Passcode(패스코드)</b> 입력란에 암호 또는 패스코드를 입력합니다. (암호는 대/소문자를 구별할 수도 있습니다. Caps Lock 또는 Num Lock 키가 설정되어 있지 않은지 확인하십시오.)</li>
+<li class="pSmartList1"><b class="cBold">Connect(연결)</b>을 클릭합니다. 로그인 대화 상자의 메시지는 VPN 연결 상태를 나타냅니다.</li>
+</ol></div>
+
+<p class="pBody"><b class="cBold">참고</b></p>
+<div><ul>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자의 목록에서 다른 구성을 선택하여 다른 VPN 또는 로그인 그룹에 대한 연결을 시작할 수 있습니다.</li>
+<li class="pSmartList1"><b class="cBold">Applications</b> 디렉터리에서 Aventail Connect 아이콘을 dock까지 끌어놓아 보다 쉽게 액세스할 수 있습니다.</li>
+</ul></div>
+
+<h3 class="pHeading3"><a name="To start Aventail Connect Linux">Aventail Connect를 시작하려면(Linux)</a></h3>
+<div><ol>
+<li class="pSmartList1">Aventail Connect를 설치한 후 원하는 위치에서 <em>startctui</em>를 실행할 수 있습니다. 바탕 화면의 Aventail Connect 아이콘을 더블 클릭하여 Aventail Connect를 시작할 수도 있습니다. Aventail Connect 로그인 대화 상자가 나타납니다.</li>
+<li class="pSmartList1"><b class="cBold">Configuration(구성)</b> 목록에서 VPN 구성을 선택합니다. 저장된 구성이 없는 경우 새로 만들어야 합니다. 자세한 내용은 <a href="#Creating a New Configuration">새 구성 만들기</a>를 참조하십시오.</li> 
+<li class="pSmartList1">Aventail Connect는 서버 인증서를 사용하는 네트워크 리소스에 액세스할 경우 해당 인증서를 표시합니다. 인증서를 승인하기 전에 서버 인증서가 신뢰할 수 있는 소스의 것인지 확인합니다. 인증서는 누구나 발급할 수 있으므로 사용자는 신뢰할 수 있는 소스가 발급한 인증서만 승인해야 합니다. 그렇게 하지 않으면 사용자가 받은 정보가 잘못된 것일 수 있습니다. 인증서를 승인할지 여부를 알고 싶으면 관리자에게 확인하십시오.</li>
+<li class="pSmartList1"><b class="cBold">Username(사용자 이름)</b> 입력란에 사용자 이름을 입력합니다.</li>
+<li class="pSmartList1"><b class="cBold">Password(암호)</b> 또는 <b class="cBold">Passcode(패스코드)</b> 입력란에 암호 또는 패스코드를 입력합니다. (암호는 대/소문자를 구별할 수도 있습니다. Caps Lock 또는 Num Lock 키가 설정되어 있지 않은지 확인하십시오.)</li>
+<li class="pSmartList1"><b class="cBold">Connect(연결)</b>을 클릭합니다. 로그인 대화 상자의 메시지는 VPN 연결 상태를 나타냅니다.</li>
+</ol></div>
+
+<p class="pBody"><b class="cBold">참고</b></p>
+<div><ul>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자에서 <b class="cBold">Create/Edit Configuration(구성 만들기/편집)</b>을 클릭하여 다른 VPN 또는 로그인 그룹에 연결을 시작할 수 있습니다.</li>
+</ul></div>
+
+<h3 class="pHeading3"><a name="Specifying a Login Group">로그인 그룹 지정</a></h3>
+
+<p class="pBody">Aventail Connect를 사용하면 필요한 경우 다른 로그인 그룹에 로그인할 수 있습니다(예: &quot;영업&quot; 및 &quot;마케팅&quot; 그룹을 번갈아서 로그인하는 경우). 각 로그인 그룹에 대하여 서로 다른 인증 자격 증명을 제공해야 할 수도 있습니다.</p>
+<p class="pBody">VPN 연결을 초기화할 때마다 로그인 그룹을 지정해야 합니다. 이 옵션은 Aventail Connect가 오프라인 상태일 때(즉, VPN에 연결되어 있지 않을 때)에만 사용할 수 있습니다.</p>
+
+<p class="pBody"><b class="cBold">로그인 그룹을 지정하려면</b></p>
+
+<div><ol>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자에서 <b class="cBold">Create/Edit Configuration(구성 만들기/편집)</b>을 클릭합니다.</li>
+<li class="pSmartList1"><b class="cBold">General(일반)</b> 탭을 클릭한 다음 <b class="cBold">Login group(로그인 그룹) </b>상자의 오른쪽에 있는 <b class="cBold">Change(변경)</b>를 클릭합니다. <b class="cBold">Select Login Group(로그인 그룹 선택)</b> 대화 상자가 나타나며 현재의 그룹 목록을 표시합니다.</li>
+<li class="pSmartList1"><b class="cBold">Select or enter your login group(로그인 그룹 선택 또는 입력)</b> 상자에서 로그인할 로그인 그룹 이름을 선택합니다. 올바른 그룹이 목록에 나타나지 않으면, <b class="cBold">Refresh(새로 고침)</b>를 클릭하여 목록을 업데이트합니다. 관리자가 Aventail Connect를 구성한 방식에 따라 일부 로그인 그룹이 목록에 나타나지 않을 수 있습니다. 하지만 이렇게 &quot;숨겨진&quot; 로그인 그룹에도(권한이 있다면) <b class="cBold">Select or enter your login group(로그인 그룹 선택 또는 입력)</b> 입력란에 해당 로그인 그룹 이름을 입력하여 로그인할 수 있습니다.</li>
+<li class="pSmartList1"><b class="cBold">OK(확인)</b>을 클릭합니다. 로그인 대화 상자가 나타납니다.</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="Connecting to a Different VPN">다른 VPN으로 연결</a></h3>
+
+<p class="pBody">연결할 다른 VPN을 지정하려면 Aventail Connect가 오프라인 상태여야 합니다 (즉 VPN에 연결되지 않아야 함).</p>
+
+<p class="pBody"><b class="cBold">VPN의 호스트 이름 또는 IP 주소를 지정하려면</b></p>
+<div><ol>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자에서 <b class="cBold">Create/Edit Configuration(구성 만들기/편집)</b>을 클릭합니다.</li>
+<li class="pSmartList1"><b class="cBold">General(일반)</b> 탭을 클릭합니다.</li>
+<li class="pSmartList1"><b class="cBold">Host name or IP address of the VPN(VPN의 호스트 이름 또는 IP 주소)</b> 입력란에 연결할 VPN의 호스트 이름 또는 IP 주소를 입력합니다.</li>
+<li class="pSmartList1"><b class="cBold">OK(확인)</b>를 클릭합니다. 로그인 대화 상자가 나타납니다.</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="How to tell if Aventail Connect is running">Aventail Connect가 실행 중임을 아는 방법</a></h3>
+
+<p class="pBody">Aventail Connect가 실행 중이며 VPN에 연결되어 있으면 연결 상태 대화 상자가 나타납니다. 이 대화 상자에는 현재 사용 중인 구성 이름, 연결된 VPN의 호스트 이름이나 IP 주소를 포함하여 기본 연결 정보가 포함되어 있습니다. 사용자는 이 대화 상자를 최소화할 수 있으나 Linux 시스템에서 이 대화 상자를 닫으면 네트워크 연결이 종료되며 Aventail Connect가 닫힙니다.</p>
+
+<hr width="100%" align=LEFT>
+<h2 class="pHeading2"><a name="Quitting Aventail Connect">Aventail Connect 종료</a></h2>
+
+<p class="pBody">VPN 세션을 종료하고 원격 네트워크에서 분리하려면 Aventail Connect 로그인 대화 상자에서 <b class="cBold">Disconnect(연결 끊기)</b>를 클릭합니다.</p>
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Managing Configurations">구성 관리</a></h2>
+<p class="pBody">로그인 프로세스를 간소화하려면 하나 이상의 VPN 구성을 설정할 수 있습니다. 예를 들어, 다른 로그인 그룹이나 다른 VPN에 연결하는 경우 이러한 설정을 다른 이름으로 저장할 수 있습니다. </p>
+
+<h3 class="pHeading3"><a name="Viewing Aventail Connect settings">Aventail Connect 설정 보기</a></h3>
+<p class="pBody">설정을 보려면 Aventail Connect가 오프라인 상태여야 합니다(즉 VPN에 연결되지 않아야 함).</p>
+<div><ol>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자의 <b class="cBold">Configuration(구성)</b> 목록에서 <i class="cItalic">Create/Edit Configuration(구성 만들기/편집)</i>을 선택합니다.</li>
+<li class="pSmartList1">왼쪽의 VPN 구성 목록에서 보려는 설정을 선택합니다. 로그인 그룹 이름과 함께(둘 이상 있는 경우) VPN의 호스트 주소가 나타납니다.</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="Editing Aventail Connect settings">Aventail Connect 설정 편집</a></h3>
+<p class="pBody">설정을 편집하려면 Aventail Connect가 오프라인 상태여야 합니다(즉 VPN에 연결되지 않아야 함).</p>
+<div><ol>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자의 <b class="cBold">Configuration(구성)</b> 목록에서 <i class="cItalic">Create/Edit Configuration(구성 만들기/편집)</i>을 선택합니다.</li>
+<li class="pSmartList1">왼쪽의 VPN 구성 목록에서 편집하려는 설정을 선택합니다. </li>
+<li class="pSmartList1">필요할 경우 <b class="cBold">Host address(호스트 주소)</b> 상자를 편집합니다.</li>
+<li class="pSmartList1">Aventail Connect를 사용하면 필요한 경우 다른 로그인 그룹에 로그인할 수 있습니다(예: &quot;영업&quot; 및 &quot;마케팅&quot; 그룹을 번갈아서 로그인하는 경우). 각 로그인 그룹에 대하여 서로 다른 인증 자격 증명을 제공해야 할 수도 있습니다. 이 구성과 관련한 로그인 그룹을 변경하려면 목록에서 그룹을 선택한 다음 <b class="cBold">Change(변경)</b>를 클릭합니다. </li>
+<li class="pSmartList1"><b class="cBold">Update(업데이트)</b>를 클릭하여 변경 내용을 저장합니다.</li>
+</ol></div>
+
+<h3 class="pHeading3"><a name="Creating a new configuration">새 구성 만들기</a></h3>
+<p class="pBody">새 구성을 만들려면 Aventail Connect가 오프라인 상태여야 합니다(즉 VPN에 연결되지 않아야 함).</p>
+<div><ol>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자의 <b class="cBold">Configuration(구성)</b> 목록에서 <i class="cItalic">Create/Edit Configuration(구성 만들기/편집)</i>을 선택합니다.</li>
+<li class="pSmartList1">VPN 구성 영역에서 더하기 기호(+)를 클릭합니다.</li>
+<li class="pSmartList1">이름을 이 구성에 할당합니다(예: <i class="cItalic">Connect from home</i>). 이 이름은 로그인할 때 <b class="cBold">Configuration(구성)</b> 목록에 나타나므로 기능을 가장 잘 설명하는 이름으로 지정하십시오.</li>
+<li class="pSmartList1"><b class="cBold">Host address(호스트 주소)</b> 상자에 VPN의 호스트 이름이나 IP 주소를 입력합니다.</li>
+<li class="pSmartList1"><b class="cBold">Login group(로그인 그룹)</b> 상자에 관리자가 설정한 영역이 나열됩니다. 영역은 하나만 있거나 여러 사용자 커뮤니티를 위해 여러 영역이 구성되어 있을 수 있습니다. </li>
+<li class="pSmartList1"><b class="cBold">Authentication(인증)</b> 영역을 사용하여 사용자가 지정한 주소와 로그인 그룹의 로그인 자격 증명을 확인할 수 있습니다.  </li>
+<li class="pSmartList1"><b class="cBold">Update(업데이트)</b>를 클릭하여 변경 내용을 저장합니다.</li>
+</ol></div>
+
+
+<h3 class="pHeading3"><a name="Deleting a configuration">구성 삭제</a></h3>
+<p class="pBody">구성을 삭제하려면 Aventail Connect가 오프라인 상태여야 합니다(즉 VPN에 연결되지 않아야 함).</p>
+<div><ol>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자의 <b class="cBold">Configuration(구성)</b> 목록에서 <i class="cItalic">Create/Edit Configuration(구성 만들기/편집)</i>을 선택합니다.</li>
+<li class="pSmartList1"><b class="cBold">Configuration(구성)</b> 목록에서 삭제하려는 VPN 구성을 강조 표시한 다음 빼기 기호를 클릭하거나 <IMG SRC="AppleCommandKey.gif" ALT="Apple Command Key">과 Delete를 누릅니다.</li>
+</ol></div>
+
+
+<h3 class="pHeading3"><a name="Advanced options">고급 옵션</a></h3>
+<p class="pBody">어플라이언스가 리소스나 인터넷 액세스에 대한 요청을 클라이언트에서 받으면 몇 가지 다른 방법으로 처리될 수 있습니다. 관리자는 AMC에서 이것을 구성합니다.</p>
+<div><ul>
+<li class="pSmartList1">터널 분할 모드에서는 AMC에 지정된 리소스용 트래픽만 어플라이언스로 리디렉션되며 다른 모든 트래픽은 평소와 같이 라우팅됩니다. 다른 말로 하면 관리자는 어플라이언스를 통해서만 리소스에 액세스할 수 있으므로 안전하게 유지되는 리소스 목록을 설정하지만 사용자는 리소스 목록에 나열되지 않은 모든 항목(예: 다른 인터넷 사이트)에 액세스할 수 있습니다.</li>
+
+<li class="pSmartList1">더 안전하고 제한적인 접근 방식인 모두 리디섹션 모드에서는 모든 트래픽이 어플라이언스를 통해 리디렉션됩니다. 허용된 리소스 목록에 없는 항목에 대한 액세스는 허용되지 않습니다.</li> 
+
+<li class="pSmartList1">관리자는 터널 모드에 관계 없이 로컬 프린터와 파일 공유에 액세스할 권한을 줄지 여부를 선택할 수 있습니다.</li>  
+</ul></div>
+
+<p class="pBody">리소스에 액세스하는 데 문제가 있는 경우 관리자가 <b class="cBold">Advanced(고급)</b> 설정을 변경하도록 지시할 수 있습니다. 관리자가 이 특정 VPN 구성에 대해 터널 분할 모드에 사용자를 구성한 때만 <b class="cBold">Network conflict resolution(네트워크 충돌 해결)</b> 옵션을 사용할 수 있습니다. 구성을 변경해야 할 경우 Connect Tunnel이 해제된 동안 변경해야 합니다.</p>
+
+<p class="pBody">가령 주소가 192.168.230.1인 호스트 리소스 웹 서버를 가지고 있는 경우를 예로 들어 봅시다. 사용자는 출장 중이고 사용하려는 프린터가 컨퍼런스 센터의 로컬 네트워크에 있으며 이는 같은 주소를 사용하고 있습니다. 사용자는 터널 분할 모드로 구성된 영역을 사용하고 있으며 관리자는 로컬 프린터와 파일 공유에 대한 액세스 권한을 줄 수 있는 선택권을 갖고 있습니다. 컨퍼런스 센터에서 인쇄할 수 있도록 관리자가 <b class="cBold">Advanced(고급)</b> 설정을 열고 <b class="cBold">Prefer local network resource access(선호하는 로컬 네트워크 리소스에 액세스)</b>를 클릭한 다음 <b class="cBold">Update(업데이트)</b>를 클릭하도록 지시할 수 있습니다.</p>
+<br>
+
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Processing Server Certificates">서버 인증서 처리</a></h2>
+
+<p class="pBody">일부 VPN 구성에서는 사용자가 보호된 네트워크 리소스에 액세스할 수 있으려면 먼저 서버 인증서를 승인해야 합니다. 서버 인증서는 본래 서버를 식별하는 디지털 서명입니다.</p>
+
+<p class="pBody">Aventail Connect는 서버 인증서를 사용하는 네트워크 리소스에 액세스할 경우 해당 인증서를 표시합니다. 인증서를 승인하기 전에 서버 인증서가 신뢰할 수 있는 소스의 것인지 확인합니다. 인증서는 누구나 발급할 수 있으므로 사용자는 신뢰할 수 있는 소스가 발급한 인증서만 승인해야 합니다. 그렇게 하지 않으면 사용자가 받은 정보가 잘못된 것일 수 있습니다. 인증서를 승인할지 여부를 알고 싶으면 관리자에게 확인하십시오.</p>
+<br>
+<hr width="100%" align=LEFT>
+
+
+
+<h2 class="pHeading2"><a name="Configuring Proxy Server Settings">프록시 서버 설정 구성</a>(Linux만 해당) </h2>
+
+<p class="pBody">Linux 사용자의 경우 일부 네트워크 리소스의 트래픽이 로컬 네트워크에서 인터넷까지 액세스를 제공하는 인터넷 프록시 서버를 통과해야 할 수 있습니다. 프록시 서버가 필요한지 여부는 관리자가 결정하지만 가끔은 사용자가 프록시 서버 설정을 지정해야 할 수도 있습니다.</p>
+
+<p class="pBody">대부분 Aventail Connect는 자동으로 인터넷 프록시 서버 설정을 검색합니다. 그러나 설정을 자동으로 검색할 수 없을 경우 사용자가 수동으로 지정해야 합니다.</p>
+
+<p class="pBody">이 단원에서는 아웃바운드 프록시 서버 설정을 지정하는 방법을 설명합니다. 이 옵션은 Aventail Connect가 오프라인 상태일 때(즉 VPN에 연결되어 있지 않을 때)와 프로그램의 Linux 버전에서만 사용할 수 있습니다.</p>
+
+<h3 class="pHeading3">아웃바운드 프록시 서버 설정을 구성하려면(Linux)</h3>
+<div><ol>
+<li class="pSmartList1">Aventail Connect 로그인 대화 상자의 <b class="cBold">Configuration(구성)</b> 목록에서 <i class="cItalic">Create/Edit Configuration(구성 만들기/편집)</i>을 선택합니다.</li>
+<li class="pSmartList1"><b class="cBold">Proxy(프록시)</b> 탭을 클릭합니다.</li>
+<li class="pSmartList1">다음 옵션 중 하나를 클릭합니다.</li>
+<div><ul>
+<li class="pSmartList2"><b class="cBold">Direct Connection to the Internet(인터넷에 직접 연결):</b> 아웃바운드 프록시 서버 리디렉션 없이 인터넷에 직접 연결을 제공합니다.</li>
+<li class="pSmartList2"><b class="cBold">Automatically detect proxy settings(프록시 설정 자동 검색):</b> 원격 네트워크에 정의된 아웃바운드 프록시 서버 설정을 검색 및 사용하기 위해 클라이언트를 구성합니다.</li>
+<li class="pSmartList2"><b class="cBold">Manual proxy configuration(수동 프록시 구성):</b> 프록시 서버 설정을 수동으로 지정할 수 있습니다. <b class="cBold">SSL</b> 입력란에 인터넷 프록시 서버의 호스트 이름이나 IP 주소를 입력합니다. <b class="cBold">Port(포트)</b> 입력란에 서버가 수신 대기 중인 포트 번호를 입력합니다. <b class="cBold">Use the same proxy server for all protocols(모든 프로토콜에 같은 프록시 서버 사용)</b>을 선택하여 지정된 <b class="cBold">SSL</b> 서버를 모든 트래픽에 사용하거나 HTTP, FTP 또는 SOCKS 트래픽에 대하여 다른 프록시 서버와 포트 번호를 지정합니다. 또는 <b class="cBold">No proxy for(프록시 없음)</b> 입력란에 프록시 서버를 통해 리디렉션하지 않으려는 호스트 이름이나 IP 주소를 지정할 수 있습니다.</li>
+<li class="pSmartList2"><b class="cBold">Automatic proxy configuration URL(자동 프록시 구성 URL):</b> 프록시 서버 설정을 지정하는 프록시 자동 구성 파일(<I>.pac</I>)을 검색하기 위하여 클라이언트를 구성합니다. 텍스트 상자에서 <cItalic>.pac</i> 파일을 호스트하는 서버의 URL을 입력합니다.</li>
+</ul>
+<li class="pSmartList1"><b class="cBold">OK(확인)</b>를 클릭합니다. 로그인 대화 상자가 나타납니다.</li>
+</ol></div>
+<br>
+<HR WIDTH="100%" ALIGN=LEFT>
+<h2 class="pHeading2"><a name="Troubleshooting">문제 해결</a></h2>
+
+<p class="pBody">이 단원에서는 기본적인 Aventail Connect Tunnel 클라이언트 문제를 해결하는 방법을 설명합니다 . VPN 연결이나 로컬 또는 원격 네트워크 리소스 액세스에 문제가 발생하는 경우 그 문제가 다음에 의해 해결되는지 확인하십시오. 문제가 지속되면 시스템 관리자에게 문의하십시오.</p>
+
+<p class="pBody"><b class="cBold">연결할 수 없음</b></p>
+<p class="pBody">VPN에 연결하는 데 문제가 생길 경우 확인해야 할 몇 가지 항목이 있습니다.</p>
+<div>
+<ul>
+<li class="pSmartList1">Aventail Connect가 실행 중이며 네트워크에 실제로 연결되어 있는지 확인합니다. 자세한 내용은 <a href="#How to Tell if Aventail Connect is Running">Aventail Connect가 실행 중임을 아는 방법</a>을 참조하십시오.</li>
+
+<li class="pSmartList1">Aventail Connect <b class="cBold">속성</b> 대화 상자에서 본인이 올바른 호스트 이름 또는 IP 주소로 연결을 시작하고 있는지 확인합니다. 자세한 내용은 <a href="#Starting Aventail Connect">Aventail Connect 시작</a>을 참조하십시오.</li>
+
+<li class="pSmartList1">Aventail Connect <b class="cBold">속성</b> 대화 상자에서 본인이 올바른 로그인 그룹에 연결을 시작하고 있는지 확인합니다. 자세한 내용은 <a href="#Specifying a Login Group">로그인 그룹 지정</a>을 참조하십시오.</li>
+
+<li class="pSmartList1">개인 방화벽을 사용할 경우 VPN에 액세스하려면 먼저 방화벽을 구성해야 하는 경우도 있습니다. 이를 위하여 VPN 호스트 이름이나 IP 주소가 포트 443에 대한 트래픽을 사용하도록 방화벽을 구성하십시오.</li>
+</ul>
+</div>
+
+<p class="pBody"><b class="cBold">리소스나 인터넷에 액세스할 수 없음</b></p>
+<p class="pBody">장치가 잘못된 보안 구역으로 분류된 것 같습니다.</p>
+
+<div>
+<ul>
+<li class="pSmartList1">관리자는 사용자가 분류한 보안 구역을 확인하도록 요청할 수 있습니다. 보안 구역이 구성되었으면 작업 표시줄 알림 영역에서 Aventail Connect 아이콘 위에 마우스를 올리면 현재 구역을 볼 수 있습니다.</li>
+</ul>
+</div>
+
+<p class="pBody">어플라이언스가 리소스나 인터넷 액세스에 대한 요청을 클라이언트에서 받으면 몇 가지 다른 방법으로 처리될 수 있습니다. 관리자는 AMC에서 이것을 구성합니다.</p>
+
+<div>
+<ul>
+<li class="pSmartList1">터널 분할 모드에서는 AMC에 지정된 리소스용 트래픽만 어플라이언스로 리디렉션되며 다른 모든 트래픽은 평소와 같이 라우팅됩니다. 다른 말로 하면 관리자는 어플라이언스를 통해서만 리소스에 액세스할 수 있으므로 안전하게 유지되는 리소스 목록을 설정하지만 사용자는 리소스 목록에 나열되지 않은 모든 항목(예: 다른 인터넷 사이트)에 액세스할 수 있습니다.</li>
+
+<li class="pSmartList1">더 안전하고 제한적인 접근 방식인 모두 리디섹션 모드에서는 모든 트래픽이 어플라이언스를 통해 리디렉션됩니다. 허용된 리소스 목록에 없는 항목에 대한 액세스는 허용되지 않습니다.</li>
+
+<li class="pSmartList1">관리자는 터널 모드에 관계 없이 로컬 프린터와 파일 공유에 액세스할 권한을 줄지 여부를 선택할 수 있습니다. </li>
+</ul>
+</div>
+
+<p class="pBody">리소스에 액세스하는 데 문제가 발생하면 관리자는 Connect 터널 <B>Properties(속성)</B> 대화 상자의 <B>Advanced(고급)</B> 탭에서 변경하도록 지시할 수 있습니다. 관리자가 터널 분할 모드에 사용자를 구성한 때만 <B>Network conflict resolution(네트워크 충돌 해결)</B> 옵션을 사용할 수 있습니다. 구성을 변경해야 할 경우 Connect Tunnel이 해제된 동안 변경해야 합니다.</p>
+
+<p class="pBody">가령 주소가 192.168.230.1인 호스트 리소스 웹 서버를 가지고 있는 경우를 예로 들어 봅시다. 사용자는 출장 중이고 사용하려는 프린터가 컨퍼런스 센터의 로컬 네트워크에 있으며 이는 같은 주소를 사용하고 있습니다. 사용자는 터널 분할 모드로 구성된 영역을 사용하고 있으며 관리자는 로컬 프린터와 파일 공유에 대한 액세스 권한을 줄 수 있는 선택권을 갖고 있습니다. 사용자가 컨퍼런스 센터에서 인쇄할 수 있도록 관리자는 사용자가 Connect 터널 <B>속성</B> 대화 상자를 열어 <B>고급</B> 탭을 클릭한 다음 사용자의 세션에 대해 <B>Prefer local network resource access(선호하는 로컬 네트워크 리소스 액세스)</B>를 클릭하도록 지시할 수 있습니다.</p>
+
+<hr>
+    <table align="right">
+      <tr>
+        <td style="text-align: left; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif">&copy;2012 SonicWALL, Inc.</td>
+      </tr>
+    </table>
+</body>
+</html>
+
