@@ -1,6 +1,6 @@
 # Introduction
 This repository holds a Docker container for running SonicWall's ConnectTunnel on not officially supported systems (e.g.
-nixos).
+nixos). By default it tries to access University of Pisa's vpn, but you can change the pointed server from within the run script.
 
 ## Requirements:
 - Docker
